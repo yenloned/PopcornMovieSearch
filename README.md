@@ -16,3 +16,7 @@ HTML5, CSS, JavaScript, node.js
 ## Contributors
 <br>Credit to development team member:
 <br>[Raymond Chau](https://github.com/Raymondchau1022)
+
+## Epilogue
+This is my very first web project. It may be flawed but it is a great learning experience. Enjoy!
+![CAT](itdog.gif)
