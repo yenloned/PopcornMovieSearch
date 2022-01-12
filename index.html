@@ -4,9 +4,9 @@
     <title>  
         Popcorn Movie Search
     </title>  
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/search_style.css">
-    <link rel="icon" href="../database/image/movielogo.png" sizes="16x16" type="image/png" width="100px">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/search_style.css">
+    <link rel="icon" href="database/image/movielogo.png" sizes="16x16" type="image/png" width="100px">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
 
-    <script src="../javascript/index.js"> </script>
+    <script src="javascript/index.js"> </script>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
     <div id = "search_index">
         <header id="navigationBar">
             <div class = "logo" > 
-                <a href="index.html"><img src="../database/image/movielogo.png" width="40px" class="logo_image" ></a>
+                <a href="index.html"><img src="database/image/movielogo.png" width="40px" class="logo_image" ></a>
                 <a class="logo_text">PMS</a>
             </div>
             <div  class = "search-bar2">
@@ -33,7 +33,7 @@
                     <input type="search" class="search-input2" placeholder="Search The Movie Name Here..." id="usersearch2" name="usersearch">
                 </div>
                 <div class="border2_2">
-                    <button class="search-button2" onclick="nextsearch()"><img src="../database/image/search.png" alt="Search Button" width="40px"></button>
+                    <button class="search-button2" onclick="nextsearch()"><img src="database/image/search.png" alt="Search Button" width="40px"></button>
                 </div>  
             </div>
             <div class="menu-text">
@@ -61,7 +61,7 @@
     </div>
     <br><br>
 
-    <div class="topic"><div><img src="../database/image/movielogo.png" width="50px" height=60px></div> Popcorn Movie Search</div>
+    <div class="topic"><div><img src="database/image/movielogo.png" width="50px" height=60px></div> Popcorn Movie Search</div>
        
     <div class="search-bar"> 
 
@@ -69,7 +69,7 @@
         <input type="search" class="search-input" placeholder="Search The Movie Name Here..." id="usersearch" name="usersearch">
         </div>
         <div class="border2">
-        <button class="search-button" onclick="firstsearch()"><img src="../database/image/search.png" alt="Search Button" width="42px"></button>
+        <button class="search-button" onclick="firstsearch()"><img src="database/image/search.png" alt="Search Button" width="42px"></button>
         </div> 
         
         
@@ -81,14 +81,14 @@
     <recommend>Recommendations </recommend>
     <br><br>
     <div class="recommend">
-        <div class="recommend0"><img src="../database/movieimage/1.png" id ="moviep1" onclick=switchmovie(1)  ></div>
-        <div class="recommend1"><img src="../database/movieimage/2.png" id ="moviep2" onclick=switchmovie(2)  ></div>
-        <div class="recommend2"><img src="../database/movieimage/3.png" id ="moviep3" onclick=switchmovie(3)  ></div>
-        <div class="recommend3"><img src="../database/movieimage/4.png" id ="moviep4" onclick=switchmovie(4)  ></div>
-        <div class="recommend4"><img src="../database/movieimage/5.png" id ="moviep5" onclick=switchmovie(5)  ></div>
-        <div class="recommend5"><img src="../database/movieimage/6.png" id ="moviep6" onclick=switchmovie(6)  ></div>
-        <div class="recommend6"><img src="../database/movieimage/7.png" id ="moviep7" onclick=switchmovie(7)  ></div>
-        <div class="recommend7"><img src="../database/movieimage/8.png" id ="moviep8" onclick=switchmovie(8)  ></div>
+        <div class="recommend0"><img src="database/movieimage/1.png" id ="moviep1" onclick=switchmovie(1)  ></div>
+        <div class="recommend1"><img src="database/movieimage/2.png" id ="moviep2" onclick=switchmovie(2)  ></div>
+        <div class="recommend2"><img src="database/movieimage/3.png" id ="moviep3" onclick=switchmovie(3)  ></div>
+        <div class="recommend3"><img src="database/movieimage/4.png" id ="moviep4" onclick=switchmovie(4)  ></div>
+        <div class="recommend4"><img src="database/movieimage/5.png" id ="moviep5" onclick=switchmovie(5)  ></div>
+        <div class="recommend5"><img src="database/movieimage/6.png" id ="moviep6" onclick=switchmovie(6)  ></div>
+        <div class="recommend6"><img src="database/movieimage/7.png" id ="moviep7" onclick=switchmovie(7)  ></div>
+        <div class="recommend7"><img src="database/movieimage/8.png" id ="moviep8" onclick=switchmovie(8)  ></div>
     </div>
     <br><br><br><br>
 
@@ -242,7 +242,7 @@
 
 
 
-    <script src="../javascript/api.js"> </script>
+    <script src="javascript/api.js"> </script>
 </body> 
 
 
@@ -330,15 +330,6 @@ function closeLastMovie(){
         copy.innerHTML = "";
     }
 }
-
-
-
-
-
-
-
-
-
 
 
 
