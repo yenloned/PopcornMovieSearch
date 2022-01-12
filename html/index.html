@@ -1,0 +1,351 @@
+<html> 
+      
+<head>  
+    <title>  
+        Popcorn Movie Search
+    </title>  
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/search_style.css">
+    <link rel="icon" href="../database/image/movielogo.png" sizes="16x16" type="image/png" width="100px">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+
+    <script src="../javascript/index.js"> </script>
+</head>
+
+<body>
+    <a name = "home" > </a>
+
+    <div id = "search_index">
+        <header id="navigationBar">
+            <div class = "logo" > 
+                <a href="index.html"><img src="../database/image/movielogo.png" width="40px" class="logo_image" ></a>
+                <a class="logo_text">PMS</a>
+            </div>
+            <div  class = "search-bar2">
+                <div class="border1_2">
+                    <input type="search" class="search-input2" placeholder="Search The Movie Name Here..." id="usersearch2" name="usersearch">
+                </div>
+                <div class="border2_2">
+                    <button class="search-button2" onclick="nextsearch()"><img src="../database/image/search.png" alt="Search Button" width="40px"></button>
+                </div>  
+            </div>
+            <div class="menu-text">
+                <a onclick="reflesh()" class="active" href="#home">Home</a>
+                <a href="about.html#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </header>
+
+        <br><br>
+        <p id="searchResult">searchResult</p>
+        <div class = "movies"> </div>
+
+        
+
+        </div>
+
+    
+    <div id = "index">
+    <div class="head-background">
+    <div class="top">
+        <a onclick="reflesh()" class="active" href="#home">Home</a>
+        <a href="about.html#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <br><br>
+
+    <div class="topic"><div><img src="../database/image/movielogo.png" width="50px" height=60px></div> Popcorn Movie Search</div>
+       
+    <div class="search-bar"> 
+
+        <div class="border1">
+        <input type="search" class="search-input" placeholder="Search The Movie Name Here..." id="usersearch" name="usersearch">
+        </div>
+        <div class="border2">
+        <button class="search-button" onclick="firstsearch()"><img src="../database/image/search.png" alt="Search Button" width="42px"></button>
+        </div> 
+        
+        
+    </div>
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+    <br>
+    <recommend>Recommendations </recommend>
+    <br><br>
+    <div class="recommend">
+        <div class="recommend0"><img src="../database/movieimage/1.png" id ="moviep1" onclick=switchmovie(1)  ></div>
+        <div class="recommend1"><img src="../database/movieimage/2.png" id ="moviep2" onclick=switchmovie(2)  ></div>
+        <div class="recommend2"><img src="../database/movieimage/3.png" id ="moviep3" onclick=switchmovie(3)  ></div>
+        <div class="recommend3"><img src="../database/movieimage/4.png" id ="moviep4" onclick=switchmovie(4)  ></div>
+        <div class="recommend4"><img src="../database/movieimage/5.png" id ="moviep5" onclick=switchmovie(5)  ></div>
+        <div class="recommend5"><img src="../database/movieimage/6.png" id ="moviep6" onclick=switchmovie(6)  ></div>
+        <div class="recommend6"><img src="../database/movieimage/7.png" id ="moviep7" onclick=switchmovie(7)  ></div>
+        <div class="recommend7"><img src="../database/movieimage/8.png" id ="moviep8" onclick=switchmovie(8)  ></div>
+    </div>
+    <br><br><br><br>
+
+    <header class="displaymovie">
+        <div class="movie1" id ="movie1">
+            <div class="trailer1"><iframe id="trailer1" width="900" height="506" src="https://www.youtube.com/embed/ReIJ1lbL-Q8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="info1">
+                <a class="name"><font size="6">Good Will Hunting</font></a><br><br>
+                <div class="infotxt">
+                Year: 1997
+                <br>Genre: Drama, Love
+                <br>Length: 126 minutes
+                <br>Language: English
+                <br>Director: Gus Van Sant
+                <br>Main Cast: Robin Williams, Matt Damon, Ben Affleck</div>
+                <br><br>
+                <div class="storyLine">Storyline: A touching tale of a wayward young man who struggles to find his identity, living in a world where he can solve any problem, except the one brewing deep within himself, until one day he meets his soul mate who opens his mind and his heart.</div></div>
+        </div>
+
+        <div class="movie2" id="movie2">
+            <div class="trailer2"><iframe id="trailer2" width="900" height="506" src="https://www.youtube.com/embed/71rDQ7z4eFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="info2">
+                <a class="name"><font size="6">Catch me if you can</font></a><br><br>
+                <div class="infotxt">
+                Year: 2002
+                <br>Genre: Biography, Crime, Drama
+                <br>Length: 141 minutes
+                <br>Language: English
+                <br>Director: Steven Spielberg
+                <br>Main Cast: Leonardo DiCaprio, Tom Hanks, Christopher Walken</div>
+                <br><br>
+                <div class="storyLine">Storyline: A true story about Frank Abagnale Jr. who, before his 19th birthday, successfully conned millions of dollars worth of checks as a Pan Am pilot, doctor, and legal prosecutor. An FBI agent makes it his mission to put him behind bars. But Frank not only eludes capture, he revels in the pursuit.</div></div>
+        </div>
+
+        <div class="movie3" id ="movie3">
+            <div class="trailer3"><iframe id="trailer3" width="900" height="506" src="https://www.youtube.com/embed/iszwuX1AK6A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="info3">
+                <a class="name"><font size="6">The Wolf of Wall Street</font></a><br><br>
+                <div class="infotxt">
+                Year: 2013
+                <br>Genre: Biography, Comedy, Crime
+                <br>Length: 180 minutes
+                <br>Language: English
+                <br>Director: Martin Scorsese
+                <br>Main Cast: Leonardo DiCaprio, Jonah Hill, Margot Robbie</div>
+                <br><br>
+                <div class="storyLine"> Storyline: In the early 1990s, Jordan Belfort teamed with his partner Donny Azoff and started brokerage firm Stratton Oakmont. Their company quickly grows from a staff of 20 to a staff of more than 250 and their status in the trading community and Wall Street grows exponentially. So much that companies file their initial public offerings through them. As their status grows, so do the amount of substances they abuse, and so do their lies. They draw attention like no other, throwing lavish parties for their staff when they hit the jackpot on high trades. That ultimately leads to Belfort featured on the cover of Forbes Magazine, being called "The Wolf Of Wall St."</div></div>
+        </div>
+
+        <div class="movie4" id ="movie4">
+            <div class="trailer4"><iframe id="trailer4" width="900" height="506" src="https://www.youtube.com/embed/K0eDlFX9GMc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="info4">
+                <a class="name"><font size="6">3 Idiots</font></a><br><br>
+                <div class="infotxt">
+                Year: 2009
+                <br>Genre: Comedy, Drama
+                <br>Length: 170 minutes
+                <br>Director: Rajkumar Hirani
+                <br>Language: Hindi/Urdu/English
+                <br>Main Cast: Aamir Khan, Madhavan, Mona Singh</div>
+                <br><br>
+                <div class="storyLine">Storyline: Farhan Qureshi and Raju Rastogi want to re-unite with their fellow collegian, Rancho, after faking a stroke aboard an Air India plane, and excusing himself from his wife - trouser less - respectively. Enroute, they encounter another student, Chatur Ramalingam, now a successful businessman, who reminds them of a bet they had undertaken 10 years ago. The trio, while recollecting hilarious antics, including their run-ins with the Dean of Delhi's Imperial College of Engineering, Viru Sahastrabudhe, race to locate Rancho, at his last known address - little knowing the secret that was kept from them all this time.</div></div>
+        </div>
+
+        <div class="movie5" id="movie5">
+            <div class="trailer5"><iframe id="trailer5" width="900" height="506" src="https://www.youtube.com/embed/TcMBFSGVi1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="info5">
+                <a class="name"><font size="6">Avengers: Endgame</font></a><br><br>
+                <div class="infotxt">
+                Year: 2019
+                <br>Genre: Action, Adventure, Drama
+                <br>Length: 181 minutes
+                <br>Language: English
+                <br>Director: Anthony Russo, Joe Russo
+                <br>Main Cast: Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson</div>
+                <br><br>
+                <div class="storyLine">Storyline: After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.</div></div>
+        </div>
+
+        <div class="movie6" id="movie6">
+            <div class="trailer6"><iframe id="trailer6" width="900" height="506" src="https://www.youtube.com/embed/zAGVQLHvwOY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="info6">
+                <a class="name"><font size="6">Joker</font></a><br><br>
+                <div class="infotxt">
+                Year: 2019
+                <br>Genre: Crime, Drama, Thriller
+                <br>Length: 122 minutes
+                <br>Language: English
+                <br>Director: Todd Phillips
+                <br>Main Cast: Joaquin PhoenixRobert De NiroZazie Beetz</div>
+                <br><br>
+                <div class="storyLine">Storyline: Arthur Fleck works as a clown and is an aspiring stand-up comic. He has mental health issues, part of which involves uncontrollable laughter. Times are tough and, due to his issues and occupation, Arthur has an even worse time than most. Over time these issues bear down on him, shaping his actions, making him ultimately take on the persona he is more known as...Joker.</div></div>
+        </div>
+
+        <div class="movie7" id="movie7">
+            <div class="trailer7"><iframe id="trailer7" width="900" height="506" src="https://www.youtube.com/embed/pyWuHv2-Abk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="info7">
+                <a class="name"><font size="6">Train to Busan</font></a><br><br>
+                <div class="infotxt">
+                Year: 2016
+                <br>Genre: Action, Horror, Thriller
+                <br>Length: 118 minutes
+                <br>Language: Korean
+                <br>Director: Sang-ho Yeon
+                <br>Main Cast: Gong Yoo, Yu-mi Jung, Ma Dong-seok</div>
+                <br><br>
+                <div class="storyLine">Storyline: Sok-woo, a father with not much time for his daughter, Soo-ahn, are boarding the KTX, a fast train that shall bring them from Seoul to Busan. But during their journey, the apocalypse begins, and most of the earth's population become flesh craving zombies. While the KTX is shooting towards Busan, the passenger's fight for their families and lives against the zombies - and each other.</div></div>
+        </div>
+
+        <div class="movie8" id="movie8">
+            <div class="trailer8"><iframe id="trailer8" width="900" height="506" src="https://www.youtube.com/embed/e7BBxVtbFTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="info8">
+                <a class="name"><font size="6">Detention</font></a><br><br>
+                <div class="infotxt">
+                Year: 2019
+                <br>Genre: Horror, Mystery, Thriller
+                <br>Length: 108 minutes
+                <br>Language: Chinese, Mandarin
+                <br>Director: John Hsu
+                <br>Main Cast: Gingle Wang, Meng-Po Fu, Jing-Hua Tseng</div>
+                <br><br>
+                <div class="storyLine">Storyline: In 1962 Taiwan, during the White Terror martial law period, Fang Ray Shin, a female student at the hillside Greenwood High School is attending counselling with teacher Mr. Chang, and they gradually fall in love. It was a dangerous period where sensitive books were banned and free speech were restricted, but Mr. Chang secretly organised a study group for banned books, together with fellow teacher Miss Yin and male student Wei Chong Ting.</div></div>
+        </div>
+        <div class="movie9" id="movie9"></div>
+    </header>
+
+ 
+
+    <br><br><br><br>
+
+    <a name = "contact" > </a>
+    <div class=infogrid >
+        
+        <a class="grid-item grid-item1"><font size="4">TEAM</font></a>
+        <a class="grid-item grid-item2"><font size="4">CONTACT US</font></a>
+        <a class="grid-item grid-item3"><font size="4">ABOUT</font></a>
+        <a class="grid-item grid-item4" href="https://www.linkedin.com/in/rudy-yen-5b3173208/" target="_blank" style="color: rgb(255, 255, 255)">Rudy Yen 
+            <img src="../database/image/linkedin.png" width="25px" height=25px></a>
+        <a class="grid-item grid-item5" href="mailto:rudyyen.work@gmail.com" target="_blank" style="color: rgb(255, 255, 255)">
+        rudyyen.work@gmail.com 
+            <img src="../database/image/gmail.jpg" width="26px" height=20px>
+        <a class="grid-item grid-item6"href="about.html" style="color: rgb(255, 255, 255)">About Us</a>
+        <a class="grid-item grid-item7" href="https://www.linkedin.com/in/raymond-chau-832a28222/" target="_blank" style="color: rgb(255, 255, 255)">Raymond Chau 
+            <img src="../database/image/linkedin.png" width="25px" height=25px></a>
+        <a class="grid-item grid-item8" href="mailto:raymondchauofficial@gmail.com" target="_blank" style="color: rgb(255, 255, 255)">
+            raymondchauofficial@gmail.com 
+            <img src="../database/image/gmail.jpg" width="26px" height=20px></a>
+        <a class="grid-item grid-item9" href="legal.html" style="color: rgb(255, 255, 255)">Legal Disclaimer</a>
+        <a class="grid-item grid-item10"><br><br>© 2022 Rudy Yen, Raymond Chau. All Right Reserved.</a>
+    </div>
+
+
+
+    <script src="../javascript/api.js"> </script>
+</body> 
+
+
+
+
+
+
+
+
+
+
+<!--javascript-->
+<script type="text/javascript"> 
+
+
+function nextsearch(){
+    let search = document.getElementById("usersearch2").value;
+    if (search != ""){
+    document.getElementById("searchResult").innerHTML = "The Searching Result of &nbsp  \"" + search + "\"";
+    apiSearch(search);
+
+    }
+}
+
+function firstsearch(){
+    
+    let search = document.getElementById("usersearch").value;
+    if (search != ""){
+        closeLastMovie();
+        hide();
+        document.getElementById("searchResult").innerHTML = "The Searching Result of&nbsp \"" + search + "\" &nbsp:";
+        document.getElementById("usersearch2").value = search;
+        apiSearch(search);
+        
+    }
+}
+
+function hide() {
+    var x = document.getElementById("index");
+    if (x.style.display !== "none") {
+        x.style.display = "none";
+      }
+    var x = document.getElementById("search_index"); 
+    console.log(x);
+    if (x.style.display === "none") {
+        x.style.display = "block";
+      }
+    }
+ 
+
+var navigationBar = document.getElementById("navigationBar");
+var sticky = navigationBar.offsetTop;
+
+function stickybar() {
+    if (window.pageYOffset >= sticky) {
+        navigationBar.classList.add("sticky")
+    } else {
+        navigationBar.classList.remove("sticky");
+    } 
+}
+
+
+
+
+var lastmovie = 1;
+function switchmovie(id){
+
+    closeLastMovie();
+    var x = "movie" + id
+    var displayrecommend = document.getElementById(x);
+    displayrecommend.style.display = "grid";
+    lastmovie = id;
+
+}
+
+function closeLastMovie(){
+    var x = "movie" + lastmovie;
+    var stoplast = document.getElementById(x);
+    var copy = document.getElementById("movie9");
+    if (stoplast.style.display !== "none") {
+        stoplast.style.display = "none";
+        copy.innerHTML = stoplast.innerHTML;
+        stoplast.innerHTML = "";
+        stoplast.innerHTML = copy.innerHTML;
+        copy.innerHTML = "";
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+  
+</html>
