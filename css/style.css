@@ -143,7 +143,7 @@ recommend {
 .head-background{
   background-image: url(../database/image/head-background.jpg);
   background-repeat: no-repeat;
-  background-size: 100%, 100%, 100%;
+  background-size: 100%;
   background-position: center top;
   border-bottom: 5px solid rgb(0, 0, 0) ;
   background-attachment: fixed;
