@@ -147,6 +147,7 @@ recommend {
   background-position: center top;
   border-bottom: 5px solid rgb(0, 0, 0) ;
   background-attachment: fixed;
+  min-width:880px
 }
 
 
