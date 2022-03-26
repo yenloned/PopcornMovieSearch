@@ -18,7 +18,7 @@ function apiSearch(search){
     };
 	
     fetch(url, option1)
-	.then(response => console.log(response))
+    .then(response => console.log(response))
     .then((data) => {
     const listm = data.Search;
     listm.map((item) => {
@@ -40,6 +40,7 @@ function apiSearch(search){
         counting++;
         })
     })
+}
 
 
 
