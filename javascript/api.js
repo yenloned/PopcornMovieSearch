@@ -5,7 +5,7 @@ function apiSearch(search){
     
     moviesList = []
     counting = 0
-    var url = "https://movie-database-imdb-alternative.p.rapidapi.com/?s=" + search + "&r=json&type=movie&page=1";
+    var url = "https://movie-database-imdb-alternative.p.rapidapi.com/?s=" + search + "&r=json&page=1";
 
     document.querySelector('.movies').innerHTML = "";
 	
