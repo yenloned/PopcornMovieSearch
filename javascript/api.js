@@ -8,14 +8,16 @@ function apiSearch(search){
     var url = "https://movie-database-imdb-alternative.p.rapidapi.com/?s=" + search + "&r=json&type=movie&page=1";
 
     document.querySelector('.movies').innerHTML = "";
-    fetch(url, {
-    "method": "GET",
-    "headers": {
-        "x-rapidapi-host": "movie-database-imdb-alternative.p.rapidapi.com",
-        "x-rapidapi-key": "3491ba94cbmsha9459b9f0cc3d0bp15e18cjsna3c80fd9a36b"
-        }
-    })
-
+	
+    const option1 = {
+    method: 'GET',
+    headers: {
+	'X-RapidAPI-Host': 'movie-database-alternative.p.rapidapi.com',
+	'X-RapidAPI-Key': '3491ba94cbmsha9459b9f0cc3d0bp15e18cjsna3c80fd9a36b'
+	}
+    };
+	
+    fetch(url, option1)
     .then(response => response.json())
     .then(data => {
     const list = data.Search;
@@ -52,16 +54,9 @@ function clickMoreDetails(searchid){
         var last_movies = ".movies_detail" + lastSearch
         document.querySelector(last_movies).innerHTML = "";
     
-        var url ="https://movie-database-imdb-alternative.p.rapidapi.com/?r=json&i=" + moviesList[searchid]
-        fetch(url, {
-            "method": "GET",
-            "headers": {
-            "x-rapidapi-host": "movie-database-imdb-alternative.p.rapidapi.com",
-            "x-rapidapi-key": "3491ba94cbmsha9459b9f0cc3d0bp15e18cjsna3c80fd9a36b"
-            }
-        })
-
-
+        var url2 ="https://movie-database-imdb-alternative.p.rapidapi.com/?r=json&i=" + moviesList[searchid]
+	
+        fetch(url2, option1)
         .then(response => response.json())
         .then(data => {
             const detail_id = data.imdbID
@@ -102,14 +97,16 @@ function clickMoreDetails(searchid){
 
 function watertrailer(trailerid){
     
-    var url="https://mdblist.p.rapidapi.com/?i="+moviesList[trailerid];
-    fetch(url, {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "mdblist.p.rapidapi.com",
-		"x-rapidapi-key": "3491ba94cbmsha9459b9f0cc3d0bp15e18cjsna3c80fd9a36b"
+    var url3="https://mdblist.p.rapidapi.com/?i="+moviesList[trailerid];
+	
+    const option2 = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Host': 'mdblist.p.rapidapi.com',
+		'X-RapidAPI-Key': '3491ba94cbmsha9459b9f0cc3d0bp15e18cjsna3c80fd9a36b'
 	}
-})
+};
+    fetch(url3, option2)
     .then(response => response.json())
     .then(data => {
         const trailer_url = data.trailer;
