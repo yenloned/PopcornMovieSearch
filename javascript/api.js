@@ -18,7 +18,6 @@ function apiSearch(search){
     };
 	
     fetch(url, option1)
-    .then(response => response.json())
     .then(data => {
     const list = data.Search;
     list.map((item) => {
@@ -56,8 +55,15 @@ function clickMoreDetails(searchid){
     
         var url2 ="https://movie-database-imdb-alternative.p.rapidapi.com/?r=json&i=" + moviesList[searchid]
 	
+	const option1 = {
+	method: 'GET',
+	headers: {
+	'X-RapidAPI-Host': 'movie-database-alternative.p.rapidapi.com',
+	'X-RapidAPI-Key': '3491ba94cbmsha9459b9f0cc3d0bp15e18cjsna3c80fd9a36b'
+		}
+	};
+	
         fetch(url2, option1)
-        .then(response => response.json())
         .then(data => {
             const detail_id = data.imdbID
             imdbwebsite = "https://www.imdb.com/title/"+detail_id
@@ -107,7 +113,6 @@ function watertrailer(trailerid){
 	}
 };
     fetch(url3, option2)
-    .then(response => response.json())
     .then(data => {
         const trailer_url = data.trailer;
         window.open(trailer_url);
