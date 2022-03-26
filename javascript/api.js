@@ -18,7 +18,8 @@ function apiSearch(search){
     };
 	
     fetch(url, option1)
-    .then(data => {
+	.then(response => console.log(response))
+    .then((data) => {
     const listm = data.Search;
     listm.map((item) => {
         const item_name = item.Title;
@@ -39,7 +40,6 @@ function apiSearch(search){
         counting++;
         })
     })
-}
 
 
 
@@ -64,7 +64,7 @@ function clickMoreDetails(searchid){
 	};
 	
         fetch(url2, option1)
-        .then(data => {
+        .then((data) => {
             const detail_id = data.imdbID
             imdbwebsite = "https://www.imdb.com/title/"+detail_id
             const detail_name = data.Title
@@ -113,8 +113,7 @@ function watertrailer(trailerid){
 	}
 };
     fetch(url3, option2)
-    .then(data => {
-        const trailer_url = data.trailer;
+    .then(data3 => {
+        const trailer_url = data3.trailer;
         window.open(trailer_url);
     })
-}
