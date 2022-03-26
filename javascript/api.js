@@ -19,8 +19,8 @@ function apiSearch(search){
 	
     fetch(url, option1)
     .then(data => {
-    const list = data.Search;
-    list.map((item) => {
+    const listm = data.Search;
+    listm.map((item) => {
         const item_name = item.Title;
         const item_id = item.imdbID;
         moviesList.push(item_id);
