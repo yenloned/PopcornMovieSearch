@@ -2,14 +2,6 @@
   box-sizing: border-box;
 }
 
-html,body{
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden; 
-}
-
 .top a {
     float: right;
     text-align: center;
@@ -31,9 +23,10 @@ html,body{
 }
 
 .search-bar {
+  margin-top: 0.5rem;
   display: flex;
   flex-grow: 1;
-  margin:0 12rem;
+  padding: 0 5rem;
   
 }
 
@@ -77,23 +70,25 @@ body {
   }
 
 
-.topic{
-    display: flex;
-    align-items: center;
-    justify-content: center;  
-    margin: 10px 38%;
-    color: black;
-    font-size: 35px;
-    text-align: center;
-    text-shadow: 8px 8px 8px rgb(148, 148, 148);
-    background-color: rgba(255, 183, 3 , 0.8);
-    border-radius: 7%;
-    border-style: solid;
-    border-color: rgb(0,0,0);
-    border-width: 6px;
-    
+.topic-container{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
 }
 
+.topic{
+    padding: 0 1rem 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 35px;
+    text-shadow: 8px 8px 8px rgb(148, 148, 148);
+    background-color: rgba(255, 183, 3 , 0.8);
+    border-radius: 10%;
+    border: 6px solid black;
+    
+}
 
 
  .recommend{
@@ -142,12 +137,11 @@ recommend {
 
 .head-background{
   background-image: url(../database/image/head-background.jpg);
-  background-repeat: no-repeat;
   background-size: 100%;
-  background-position: center top;
   border-bottom: 5px solid rgb(0, 0, 0) ;
   background-attachment: fixed;
-  min-width:880px
+  display : flex;
+  flex-direction: column;
 }
 
 
@@ -157,7 +151,7 @@ recommend {
 
 .movie1,.movie2,.movie3,.movie4,.movie5,.movie6,.movie7,.movie8, .movie9
 {
-  display:grid;
+  display:grid; 
   margin: 1rem 1rem;
   grid-template-columns: repeat(2, 5fr);
   text-align: left;
@@ -210,21 +204,20 @@ recommend {
 
 .infogrid{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   font-size: 16px;
   color: rgb(233, 233, 233);
-  padding: 5rem 0;
+  padding: 5rem 0.5rem;
   margin: 0 0.1rem;
   background-image: url("../database/image/infobackground.jpg");
   border-style: solid;
+  text-align: center;
 }
 
 .infogrid a:link a:visited a:hover a:active {
   color: white;
   text-decoration: none;
-
 }
-
 
 
