@@ -56,7 +56,7 @@ function clickMoreDetails(searchid){
         fetch(url, {
             "method": "GET",
             "headers": {
-            "x-rapidapi-host": "movie-database-imdb-alternative.p.rapidapi.com",
+            "x-rapidapi-host": "movie-database-alternative.p.rapidapi.com",
             "x-rapidapi-key": "3491ba94cbmsha9459b9f0cc3d0bp15e18cjsna3c80fd9a36b"
             }
         })
