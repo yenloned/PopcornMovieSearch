@@ -6,6 +6,7 @@
     </title>  
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/search_style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="icon" href="database/image/movielogo.png" sizes="16x16" type="image/png" width="100px">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,8 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
 
-    <script src="./javascript/index.js"> </script>
-    <script src="./javascript/api.js"> </script>
+    <script src="javascript/index.js"> </script>
 </head>
 
 <body>
@@ -47,9 +47,6 @@
         <br><br>
         <p id="searchResult">searchResult</p>
         <div class = "movies"> </div>
-
-        
-
         </div>
 
     
@@ -60,10 +57,15 @@
         <a href="about.html#about">About</a>
         <a href="#contact">Contact</a>
     </div>
-    <br><br>
+   
 
-    <div class="topic"><div><img src="database/image/movielogo.png" width="50px" height=60px></div> Popcorn Movie Search</div>
-       
+    <div class="topic-container">
+        <div class="topic">
+            <div><img src="database/image/movielogo.png" width="50px" height=60px></div> 
+            <a>Popcorn Movie Search</a>
+        </div>
+    </div>
+
     <div class="search-bar"> 
 
         <div class="border1">
@@ -72,7 +74,6 @@
         <div class="border2">
         <button class="search-button" onclick="firstsearch()"><img src="database/image/search.png" alt="Search Button" width="42px"></button>
         </div> 
-        
         
     </div>
     
@@ -223,22 +224,33 @@
     <a name = "contact" > </a>
     <div class=infogrid >
         
-        <a class="grid-item grid-item1"><font size="4">TEAM</font></a>
-        <a class="grid-item grid-item2"><font size="4">CONTACT US</font></a>
-        <a class="grid-item grid-item3"><font size="4">ABOUT</font></a>
-        <a class="grid-item grid-item4" href="https://www.linkedin.com/in/rudy-yen-5b3173208/" target="_blank" style="color: rgb(255, 255, 255)">Rudy Yen 
-            <img src="database/image/linkedin.png" width="25px" height=25px></a>
-        <a class="grid-item grid-item5" href="mailto:rudyyen.work@gmail.com" target="_blank" style="color: rgb(255, 255, 255)">
-        rudyyen.work@gmail.com 
-            <img src="database/image/gmail.jpg" width="26px" height=20px>
-        <a class="grid-item grid-item6"href="about.html" style="color: rgb(255, 255, 255)">About Us</a>
-        <a class="grid-item grid-item7" href="https://www.linkedin.com/in/raymond-chau-832a28222/" target="_blank" style="color: rgb(255, 255, 255)">Raymond Chau 
-            <img src="database/image/linkedin.png" width="25px" height=25px></a>
-        <a class="grid-item grid-item8" href="mailto:raymondchauofficial@gmail.com" target="_blank" style="color: rgb(255, 255, 255)">
-            raymondchauofficial@gmail.com 
-            <img src="database/image/gmail.jpg" width="26px" height=20px></a>
-        <a class="grid-item grid-item9" href="legal.html" style="color: rgb(255, 255, 255)">Legal Disclaimer</a>
-        <a class="grid-item grid-item10"><br><br>© 2022 Rudy Yen, Raymond Chau. All Right Reserved.</a>
+        <div class="grid-item grid-item1"><font size="4">TEAM</font>
+            <br>
+            <a class="grid-item grid-item4" href="https://www.linkedin.com/in/rudy-yen-5b3173208/" target="_blank" style="color: rgb(255, 255, 255)">Rudy Yen 
+                <img src="../database/image/linkedin.png" width="25px" height=25px></a>
+            <br>
+            <a class="grid-item grid-item7" href="https://www.linkedin.com/in/raymond-chau-832a28222/" target="_blank" style="color: rgb(255, 255, 255)">Raymond Chau 
+                <img src="../database/image/linkedin.png" width="25px" height=25px></a>
+        </div>
+        
+        <div class="grid-item grid-item2"><font size="4">CONTACT US</font>
+            <br>
+            <a class="grid-item grid-item5" href="mailto:rudyyen.work@gmail.com" target="_blank" style="color: rgb(255, 255, 255)">
+                rudyyen.work@gmail.com<img src="../database/image/gmail.jpg" width="26px" height=20px>
+                <br>
+            <a class="grid-item grid-item8" href="mailto:raymondchauofficial@gmail.com" target="_blank" style="color: rgb(255, 255, 255)">
+                raymondchauofficial@gmail.com<img src="../database/image/gmail.jpg" width="26px" height=20px></a>
+        </div>
+        
+        <div class="grid-item grid-item3"><font size="4">ABOUT</font>
+            <br>
+            <a class="grid-item grid-item6"href="about.html" style="color: rgb(255, 255, 255)">About Us</a>
+            <br>
+            <a class="grid-item grid-item9" href="legal.html" style="color: rgb(255, 255, 255)">Legal Disclaimer</a>
+        </div>
+        
+
+        <div><br><br>© 2022 Rudy Yen, Raymond Chau. All Right Reserved.</div>
     </div>
 
 
