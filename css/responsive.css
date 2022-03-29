@@ -1,0 +1,205 @@
+@media screen and (max-width:1500px){
+    .trailer1 iframe,.trailer2  iframe,.trailer3 iframe,.trailer4 iframe,.trailer5 iframe,.trailer6 iframe,.trailer7 iframe,.trailer8 iframe{
+        width: 700px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:1250px){
+    .trailer1 iframe,.trailer2  iframe,.trailer3 iframe,.trailer4 iframe,.trailer5 iframe,.trailer6 iframe,.trailer7 iframe,.trailer8 iframe{
+        width: 620px;
+        height: 350px;
+    }
+
+    #searchResult{
+        margin-top: 6rem;
+    }
+}
+@media screen and (max-width:1100px){
+    .trailer1 iframe,.trailer2  iframe,.trailer3 iframe,.trailer4 iframe,.trailer5 iframe,.trailer6 iframe,.trailer7 iframe,.trailer8 iframe{
+        width: 500px;
+        height: 283px;
+    }
+
+    .topic{
+        font-size: 30px;
+    }
+
+    #searchResult{
+        margin-top: 6rem;
+    }
+}
+
+@media screen and (max-width:1080px){
+    .aboutintro{
+        grid-template-columns: auto;
+        grid-gap: 1rem;
+    }
+
+    .search-bar{
+        padding: 0 4rem;
+    }
+    
+    .border1{
+        width : 90%
+    }
+    
+    .menu-text a{
+        padding: 10px 10px;
+        font-size: 15px;
+    }
+    #searchResult{
+        margin-top: 4rem 7.5rem;
+    }
+
+}
+
+
+@media screen and (max-width:980px){
+    .whatwedo{
+        grid-template-columns: auto;
+    }
+
+    .topic{
+        font-size: 27.5px;
+    }
+    #searchResult{
+        margin-top: 4rem 5rem;
+    }
+
+    
+}
+@media screen and (max-width:950px){
+    .movie1,.movie2,.movie3,.movie4,.movie5,.movie6,.movie7,.movie8, .movie9{
+        grid-template-columns: auto;
+        text-align: center;
+    }
+    .trailer1 iframe,.trailer2  iframe,.trailer3 iframe,.trailer4 iframe,.trailer5 iframe,.trailer6 iframe,.trailer7 iframe,.trailer8 iframe{
+        width: 750px;
+        height: 423px;
+    }
+
+    .menu-text a{
+        padding: 7px 7px;
+        font-size: 10px;
+    }
+
+    
+}
+
+@media screen and (max-width:800px){
+    .trailer1 iframe,.trailer2  iframe,.trailer3 iframe,.trailer4 iframe,.trailer5 iframe,.trailer6 iframe,.trailer7 iframe,.trailer8 iframe{
+        width: 620px;
+        height: 350px;
+    }
+
+    .topic{
+        font-size: 25px;
+    }
+
+    .topic img{
+        width: 30px;
+        height: 36px
+    }
+    #searchResult{
+        margin: 4rem 2.5rem;
+    }
+
+    
+}
+
+@media screen and (max-width:735px){
+    .infogrid{
+        grid-template-columns: auto;
+        text-align: center;
+        gap: 1.5rem;
+        font-size: 18px;
+    }
+
+    .recommend{
+        text-align: center;
+    }
+
+    
+}
+
+@media screen and (max-width:700px){
+    .trailer1 iframe,.trailer2  iframe,.trailer3 iframe,.trailer4 iframe,.trailer5 iframe,.trailer6 iframe,.trailer7 iframe,.trailer8 iframe{
+        width: 500px;
+        height: 283px;
+    }
+    .whatwedoimage img{
+        width: 480px;
+        height: 298px;
+    }
+
+    
+
+}
+@media screen and (max-width:650px){
+    .logo_text{
+        display: none;
+    }
+}
+
+@media screen and (max-width:565px){
+    .whatwedoimage img{
+        width: 400px;
+        height: 222px;
+    }
+    .whatwedotxt{
+        font-size: 15px;
+    }
+    .whatwedo{
+        padding: 1rem 1rem;
+    }
+
+    .search-bar{
+        padding: 0 2rem;
+    }
+
+}
+    
+   
+
+@media screen and (max-width:500px){
+    .trailer1 iframe,.trailer2  iframe,.trailer3 iframe,.trailer4 iframe,.trailer5 iframe,.trailer6 iframe,.trailer7 iframe,.trailer8 iframe{
+        width: 354px;
+        height: 200px;
+    }
+    .technologies_show{
+        grid-template-columns: auto auto;
+    }
+    .search-bar2 {
+        margin: 0;
+    }
+    #searchResult{
+        margin: 4rem 1rem;
+        font-size: 20px;
+    }
+    [class *="movies_detail"]{
+        padding: 0 7rem;
+    }
+    
+}
+
+@media screen and (max-width:440px){
+    .whatwedoimage img{
+        width: 320px;
+        height: 200px;
+    }
+    .whatwedo{
+        padding: 0;
+    }
+    [class *="movies_detail"]{
+        padding: 0 9rem;
+    }
+}
+
+
+@media screen and (max-width:400px){
+    .trailer1 iframe,.trailer2  iframe,.trailer3 iframe,.trailer4 iframe,.trailer5 iframe,.trailer6 iframe,.trailer7 iframe,.trailer8 iframe{
+        width: 300px;
+        height: 170px;
+    }
+}
