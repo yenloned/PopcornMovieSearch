@@ -5,23 +5,21 @@ function apiSearch(search){
     
     moviesList = []
     counting = 0
-    var url = "https://movie-database-imdb-alternative.p.rapidapi.com/?s=" + search + "&r=json&page=1";
+    var url = "https://movie-database-alternative.p.rapidapi.com/?s=" + search + "&r=json&page=1";
 
     document.querySelector('.movies').innerHTML = "";
-	
-    const option1 = {
-    method: 'GET',
-    headers: {
-	'X-RapidAPI-Host': 'movie-database-alternative.p.rapidapi.com',
-	'X-RapidAPI-Key': '3491ba94cbmsha9459b9f0cc3d0bp15e18cjsna3c80fd9a36b'
-	}
-    };
-	
-    fetch(url, option1)
-    .then(response => console.log(response))
-    .then((data) => {
-    const listm = data.Search;
-    listm.map((item) => {
+    fetch(url, {
+    "method": "GET",
+    "headers": {
+        "x-rapidapi-host": "movie-database-alternative.p.rapidapi.com",
+        "x-rapidapi-key": "3491ba94cbmsha9459b9f0cc3d0bp15e18cjsna3c80fd9a36b"
+        }
+    })
+
+    .then(response => response.json())
+    .then(data => {
+    const list = data.Search;
+    list.map((item) => {
         const item_name = item.Title;
         const item_id = item.imdbID;
         moviesList.push(item_id);
@@ -54,18 +52,18 @@ function clickMoreDetails(searchid){
         var last_movies = ".movies_detail" + lastSearch
         document.querySelector(last_movies).innerHTML = "";
     
-        var url2 ="https://movie-database-imdb-alternative.p.rapidapi.com/?r=json&i=" + moviesList[searchid]
-	
-	const option1 = {
-	method: 'GET',
-	headers: {
-	'X-RapidAPI-Host': 'movie-database-alternative.p.rapidapi.com',
-	'X-RapidAPI-Key': '3491ba94cbmsha9459b9f0cc3d0bp15e18cjsna3c80fd9a36b'
-		}
-	};
-	
-        fetch(url2, option1)
-        .then((data) => {
+        var url ="https://movie-database-alternative.p.rapidapi.com/?r=json&i=" + moviesList[searchid]
+        fetch(url, {
+            "method": "GET",
+            "headers": {
+            "x-rapidapi-host": "movie-database-imdb-alternative.p.rapidapi.com",
+            "x-rapidapi-key": "3491ba94cbmsha9459b9f0cc3d0bp15e18cjsna3c80fd9a36b"
+            }
+        })
+
+
+        .then(response => response.json())
+        .then(data => {
             const detail_id = data.imdbID
             imdbwebsite = "https://www.imdb.com/title/"+detail_id
             const detail_name = data.Title
@@ -104,17 +102,17 @@ function clickMoreDetails(searchid){
 
 function watertrailer(trailerid){
     
-    var url3="https://mdblist.p.rapidapi.com/?i="+moviesList[trailerid];
-	
-    const option2 = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Host': 'mdblist.p.rapidapi.com',
-		'X-RapidAPI-Key': '3491ba94cbmsha9459b9f0cc3d0bp15e18cjsna3c80fd9a36b'
+    var url="https://mdblist.p.rapidapi.com/?i="+moviesList[trailerid];
+    fetch(url, {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "mdblist.p.rapidapi.com",
+		"x-rapidapi-key": "3491ba94cbmsha9459b9f0cc3d0bp15e18cjsna3c80fd9a36b"
 	}
-};
-    fetch(url3, option2)
-    .then(data3 => {
-        const trailer_url = data3.trailer;
+})
+    .then(response => response.json())
+    .then(data => {
+        const trailer_url = data.trailer;
         window.open(trailer_url);
     })
+}
